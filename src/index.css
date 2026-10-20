@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.art-orbit {
+  position: absolute;
+  border: 1px solid rgb(118 157 120 / 16%);
+  border-radius: 50%;
+}
+
+.art-orbit-one {
+  width: 320px;
+  height: 320px;
+}
+
+.art-orbit-two {
+  width: 380px;
+  height: 380px;
+}
+
+.pack-art {
+  background: linear-gradient(142deg, #f1f6e9 0%, #e1eddc 55%, #d5e6d0 100%);
+}
+
+.pack-shine {
+  position: absolute;
+  top: -78px;
+  right: -20px;
+  width: 160px;
+  height: 300px;
+  transform: rotate(36deg);
+  background: rgb(255 255 255 / 26%);
+}
+
+.capsule {
+  position: absolute;
+  right: 28px;
+  width: 16px;
+  height: 36px;
+  border: 1px solid rgb(69 111 77 / 20%);
+  border-radius: 9px;
+  background: linear-gradient(90deg, #fdfbf2 0 50%, #83b885 50%);
+  opacity: .7;
+  transform: rotate(34deg);
+}
+
+.capsule-one {
+  top: 30px;
+}
+
+.capsule-two {
+  top: 55px;
+  right: 50px;
+  transform: rotate(57deg);
+}
+
+@layer utilities {
+  .text-\[8px\] {
+    font-size: 0.625rem;
+  }
+
+  .text-\[9px\] {
+    font-size: 0.6875rem;
+  }
+
+  .text-\[10px\] {
+    font-size: 0.75rem;
+  }
+
+  .text-\[11px\] {
+    font-size: 0.8125rem;
+  }
+
+  .text-\[12px\] {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .art-orbit-one {
+    width: 380px;
+    height: 380px;
+  }
+
+  .art-orbit-two {
+    width: 460px;
+    height: 460px;
+  }
+}
